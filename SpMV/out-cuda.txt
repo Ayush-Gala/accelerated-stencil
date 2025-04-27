@@ -1,0 +1,123 @@
+----------------------------------------------------------------------------------
+                                    CUDA-SPMV
+----------------------------------------------------------------------------------
+
+file=tests/D6-6.mtx rows=120576 cols=23740 nonzeros=146880
+Writing matrix in COO format to test_COO ...... done!
+
+--- CPU Implementation ---
+        Performing 800 iterations
+        benchmarking CPU-COO-SpMV:   0.1547 ms (  1.90 GFLOP/s  17.8 GB/s)
+
+--- CUDA Implementation ---
+        Performing 800 iterations
+        benchmarking CUDA-COO-SpMV:   0.0089 ms ( 32.85 GFLOP/s 308.2 GB/s)
+
+Performance Comparison:
+CPU:   0.1547 ms
+CUDA:   0.0089 ms
+Speedup:    17.30x
+
+Maximum difference between CPU and CUDA results: 2.166748e-03
+
+
+---------------------------------------x------------------------------------------
+
+file=tests/dictionary28.mtx rows=52652 cols=52652 nonzeros=178076
+Writing matrix in COO format to test_COO ...... done!
+
+--- CPU Implementation ---
+        Performing 800 iterations
+        benchmarking CPU-COO-SpMV:   0.3110 ms (  1.15 GFLOP/s  10.2 GB/s)
+
+--- CUDA Implementation ---
+        Performing 800 iterations
+        benchmarking CUDA-COO-SpMV:   0.0141 ms ( 25.23 GFLOP/s 224.1 GB/s)
+
+Performance Comparison:
+CPU:   0.3110 ms
+CUDA:   0.0141 ms
+Speedup:    22.03x
+
+Maximum difference between CPU and CUDA results: 9.887695e-03
+
+---------------------------------------x------------------------------------------
+
+file=tests/Ga3As3H12.mtx rows=61349 cols=61349 nonzeros=5970947
+Writing matrix in COO format to test_COO ...... done!
+
+--- CPU Implementation ---
+        Performing 500 iterations
+        benchmarking CPU-COO-SpMV:  19.8740 ms (  0.60 GFLOP/s   4.8 GB/s)
+
+--- CUDA Implementation ---
+        Performing 500 iterations
+        benchmarking CUDA-COO-SpMV:   2.5490 ms (  4.68 GFLOP/s  37.7 GB/s)
+
+Performance Comparison:
+CPU:  19.8740 ms
+CUDA:   2.5490 ms
+Speedup:     7.80x
+
+Maximum difference between CPU and CUDA results: 1.044922e-01
+
+---------------------------------------x------------------------------------------
+
+file=tests/bfly.mtx rows=49152 cols=49152 nonzeros=196608
+Writing matrix in COO format to test_COO ...... done!
+
+--- CPU Implementation ---
+        Performing 800 iterations
+        benchmarking CPU-COO-SpMV:   0.2076 ms (  1.89 GFLOP/s  17.0 GB/s)
+
+--- CUDA Implementation ---
+        Performing 800 iterations
+        benchmarking CUDA-COO-SpMV:   0.0086 ms ( 45.93 GFLOP/s 413.3 GB/s)
+
+Performance Comparison:
+CPU:   0.2076 ms
+CUDA:   0.0086 ms
+Speedup:    24.24x
+
+Maximum difference between CPU and CUDA results: 0.000000e+00
+
+---------------------------------------x------------------------------------------
+
+file=tests/pkustk14.mtx rows=151926 cols=151926 nonzeros=14836504
+Writing matrix in COO format to test_COO ...... done!
+
+--- CPU Implementation ---
+        Performing 500 iterations
+        benchmarking CPU-COO-SpMV:  49.4799 ms (  0.60 GFLOP/s   4.8 GB/s)
+
+--- CUDA Implementation ---
+        Performing 500 iterations
+        benchmarking CUDA-COO-SpMV:   4.0749 ms (  7.28 GFLOP/s  58.6 GB/s)
+
+Performance Comparison:
+CPU:  49.4799 ms
+CUDA:   4.0749 ms
+Speedup:    12.14x
+
+Maximum difference between CPU and CUDA results: 4.785156e-02
+
+---------------------------------------x------------------------------------------
+
+file=tests/roadNet-CA.mtx rows=1971281 cols=1971281 nonzeros=5533214
+Writing matrix in COO format to test_COO ...... done!
+
+--- CPU Implementation ---
+        Performing 500 iterations
+        benchmarking CPU-COO-SpMV:   7.5367 ms (  1.47 GFLOP/s  13.8 GB/s)
+
+--- CUDA Implementation ---
+        Performing 500 iterations
+        benchmarking CUDA-COO-SpMV:   0.2865 ms ( 38.62 GFLOP/s 363.8 GB/s)
+
+Performance Comparison:
+CPU:   7.5367 ms
+CUDA:   0.2865 ms
+Speedup:    26.30x
+
+Maximum difference between CPU and CUDA results: 4.882812e-03
+

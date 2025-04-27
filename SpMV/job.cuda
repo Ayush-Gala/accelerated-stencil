@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#SBATCH -J cuda-mpi         # Job name
+#SBATCH -o cm4-rdnet.%j.out         # Name of stdout output file (%j expands to jobId)
+#SBATCH -N 4                  # Total number of nodes requested
+#SBATCH -n 4                 # Total number of mpi tasks requested
+#SBATCH -p rtx2060super
+#SBATCH -t 08:00:00           # Run time (hh:mm:ss) - 1.5 hours
+
+# Launch cuda-based executable
+
+mpirun -np 4 ./spmv-mpi-cuda tests/roadNet-CA.mtx -p
